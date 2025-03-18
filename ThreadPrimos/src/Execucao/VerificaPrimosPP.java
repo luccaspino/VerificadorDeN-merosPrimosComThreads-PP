@@ -6,8 +6,8 @@ import java.util.concurrent.ConcurrentHashMap;
 public class VerificaPrimosPP extends Thread {
 
     private List<String> linhas; // Lista de linhas (números) a serem processadas
-    private int indice0; // Índice inicial no arquivo original
-    private ConcurrentHashMap<Integer, String> saida; // Mapa para armazenar resultados
+    private int indice0; // Índice pelo  arquivo original
+    private ConcurrentHashMap<Integer, String> saida; // hashmap para armazenar a saida
 
     public VerificaPrimosPP(List<String> linhas, int indice0, ConcurrentHashMap<Integer, String> saida) {
         this.linhas = linhas;

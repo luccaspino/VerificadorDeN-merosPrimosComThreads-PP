@@ -16,7 +16,7 @@ public class VerificaPrimosPP5 {
         								//para um arquivo menor e de fácil visualização use Entrada02
         String outputFile = "Saida03.txt"; // Para 5 threads, se usa a Saida 03
 
-        // Captura o tempo inicial
+        // tempo inicial
         long t0 = System.nanoTime();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -56,10 +56,10 @@ public class VerificaPrimosPP5 {
                 }
             }
 
-            // Captura o tempo final
+            // tempo final
             long tf = System.nanoTime();
 
-            // Calcula o tempo decorrido em milissegundos
+            // Calcula o tempo em milissegundos
             long duracao = (tf - t0) / 1_000_000;
 
             System.out.println("Processamento concluído.\nVerifique o arquivo de saída: " + outputFile);

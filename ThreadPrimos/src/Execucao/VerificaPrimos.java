@@ -9,10 +9,11 @@ import java.io.IOException;
 public class VerificaPrimos {
 
     public static void main(String[] args) {
-        String inputFile = "Entrada01.txt";
+        String inputFile = "Entrada01.txt"; // Para arquivo do professor, use Entrada01, 
+        									//para um arquivo menor e de fácil visualização use Entrada02
         String outputFile = "Saida02.txt";
 
-        // Captura o tempo inicial
+        // tempo inicial
         long t0 = System.nanoTime();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -30,10 +31,10 @@ public class VerificaPrimos {
                 }
             }
 
-            // Captura o tempo final
+            //  tempo final
             long tf = System.nanoTime();
 
-            // Calcula o tempo decorrido em milissegundos
+            // Calcula o tempo em milissegundos
             long duracao = (tf - t0) / 1_000_000;
 
             System.out.println("Thread sequencial finalizada com sucesso.\nVerifique a saída: " + outputFile);
