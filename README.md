@@ -2,6 +2,7 @@ O objetivo desse projeto em java é desenvolver um programa que faça a verifica
 
 Feito pelo discente Luccas Pino para a matéria Sistemas Distribuídos e Programação Paralela, a qual é ministrada pelo professor Edson Mota da Cruz.
 
+
 1 Implementação
 
 Então, temos como entrada um txt "Entrada01.txt" com 50.000 linhas todas possuindo um número primo, assim, cabendo a aplicação gerar como saída a lista na mesma ordem, porém, com apenas os números primos da lista original.
@@ -11,7 +12,6 @@ A partir disso, foram desenvolvidas 3 implementações:
 3. Implementação de um modelo de programação paralela usando 10 threads
 
 E, posto isso, realização de um relatório que detalhe a implementação do projeto java e das classses e dos tempos de execução com um gráfico comparativo pela saída de cada implementação.
-
 
 
 1.1 Implementação Sequencial
@@ -27,7 +27,6 @@ A classe VerificaPrimosPP5 é a classe main que implementa o processamento paral
 1.3 Implementação de um modelo de programação paralela usando 10 threads
 
 Também foi-se utilizado a classe VerificaPrimosPP como classe base e também foi criada uma nova classe principal, a VerificaPrimosPP10, que se diferencia com os ajustes de 5 para 10 threads, esses sendo feitos no tamanho da chunk para 10 partes, no próprio array de número de thread e no laço que cria as threads.
-
 
 
 2. Análise do tempo de execução e gráfico comparativo
@@ -61,5 +60,7 @@ Modelo Sequencial: Inicialmente ia fazer o método verificaPrimo de outra forma 
 No começo, não sabia se o método estava certo, então fiz uma entrada02 com menos números tendo primos e não primos e verificando se na saída eles vinham na ordem original e somente os primos, isso facilitou bastante correções e o decorrer do código, pois era bem difícil a visualização na Entrada01 ( a fornecida), entretanto, feito esses testes na entrada02, só alterei para entrada01 e obtive os resultados esperados, ainda adicionei um - Primo só para deixar mais visível ainda.
 
 Modelo de Programação Paralela: A aula de segunda me ajudou bastante, pois o código do show me deu vários insights de como abordar o paralelismo, facilitou bastante ter feito ele antes desse, inicialmente tentei usar o lock() e a saídas estavam de fato corretas nas threads, porém, em uma ordem diferente da original e esse é outro fator que eu acho que prejudica o desempenho e tempo de execução, caso só bastasse escrever os números primos acredito que tería um ganho ainda maior com as threads paralelas, só que como tive que ajustar em ordem acaba perdendo e para isso usei os HashMaps já havia utilizado em outras disciplinas como Sistemas Operacionais, Compiladores e Programação Orientada a Objeto, mas nunca tinha usado o "Concurrent", inicialmente a classe VerificaPrimosPP tinha uma main embutida, mas preferi separar pra ficar mais fácil de executar os exemplos de PP ( progamação paralela) com 5 (PP5) e 10(PP10) Threads.
+
+Além disso, também tive umas dificuldades para exportar da IDE pro GitHub, pois eu sempre fazia o upload de arquivos manualmente, só que no caso de java tem tantos diretórios que ficaria complicado, mas após pesquisar aprendi e vi que tinham integrações pela própria IDE.
 
 Por fim, meu último desafio foi quanto ao gráfico, fiquei em dúvida se ele tinha que ser plotado no próprio programa ou não, mas relendo a atividade vi que não, bastava ter verificação do tempo de execução no meio do código e com esses dados poderia criar os gráficos com fins comparativos, então implementei o System.nanoTime() que foi essencial nisso e me trouxe os dados raiz pra criação do gráfico de dispersão acima.
