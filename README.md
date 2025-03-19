@@ -1,6 +1,6 @@
 O objetivo desse projeto em java é desenvolver um programa que faça a verificação de números primos e que também demonstre a diferença de desempenho obtida na implementação sequencial quando em relação a programação paralela de 5 até 10 threads. 
 
-Feito pelo discente Luccas Pino para a matéria Sistemas Distribuídos e Programação Paralela do professor Edson Mota da Cruz.
+Feito pelo discente Luccas Pino para a matéria Sistemas Distribuídos e Programação Paralela, a qual é ministrada pelo professor Edson Mota da Cruz.
 
 1 Implementação
 
