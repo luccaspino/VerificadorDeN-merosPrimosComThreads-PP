@@ -27,3 +27,30 @@ A classe VerificaPrimosPP5 é a classe main que implementa o processamento paral
 1.3 Implementação de um modelo de programação paralela usando 10 threads
 
 Também foi-se utilizado a classe VerificaPrimosPP como classe base e também foi criada uma nova classe principal, a VerificaPrimosPP10, que se diferencia com os ajustes de 5 para 10 threads, esses sendo feitos no tamanho da chunk para 10 partes, no próprio array de número de thread e no laço que cria as threads.
+
+
+
+2. Análise do tempo de execução e gráfico comparativo
+
+Em teoria, a implementação de 1 thread sequencial tem um tempo de execução maior porque todas as tarefas são processadas uma após a outra, sem aproveitar a capacidade de processamento paralelo. Já com múltiplas threads, as tarefas são divididas e processadas simultaneamente, reduzindo o tempo total de execução justamente pelo paralelismo. 
+
+Quanto ao tempo de execução por si só, ele pode variar de acordo com a máquina, com o código, número de threads e até pelo tamanho do arquivo que ele lê, sendo assim, importante ressaltar que os resultados a seguir foram catalogadas com a Entrada01.txt que foi fornecida, na minha máquina pessoal e com o código fornecido no repositório, podendo assim ter variância pra mais ou menos em comparação com outros códigos.
+
+Quanto aos testes, foram executados os testes 10 vezes e a média foi considerado o tempo de execução para criação do gráfico, que ficou assim:
+
+Implementação  sequencial 1 Thread - 149 ms
+![image](https://github.com/user-attachments/assets/1dafa8be-a23a-447d-81af-561fe83a1b57)
+
+Implementação programação paralela 5 threads - 76 ms
+![image](https://github.com/user-attachments/assets/a3e6616a-bc1b-4321-acac-7fadf7a154b7)
+
+Implementação programação paralela  10 threads - 60 ms
+![image](https://github.com/user-attachments/assets/842d8404-2cc6-4b57-b19c-aaf8625761b9)
+
+Gerando esse gráfico de dispersão:
+![Imagem do WhatsApp de 2025-03-19 à(s) 00 00 23_2bba0203](https://github.com/user-attachments/assets/31b765b3-74f8-4cc8-905b-cd20ea5a2578)
+
+Feito isso, foi comprovado que o que a teoria estabelece realmente acontece, tendo uma diferença significativa da sequencial pra paralela e, quando ambas são paralelas, a que tem mais threads acaba sendo executada em um tempo menor.
+
+
+3. Considerações Finais
