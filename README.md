@@ -55,7 +55,7 @@ Feito isso, foi comprovado que o que a teoria estabelece realmente acontece, ten
 
 3. Considerações Finais
 
-Modelo Sequencial: Inicialmente ia fazer o método verificaPrimo de outra forma iterando do 2 até o antecessor do número e se houvesse algum resto = 0 retornaria número não primo, mas acabei pesquisando e fazendo eliminações como número >1 e o uso da raiz e quanto a isso me refiro que devem ter inúmeras formas de otimizar o código e assim diminuir o tempo de execução, ainda mais visando o paralelismo, então achei isso bem importante e notável.
+Modelo Sequencial: Inicialmente ia fazer o método verificaPrimo de outra forma iterando do 2 até o antecessor do número e se houvesse algum resto = 0 retornaria número não primo, mas acabei pesquisando e fazendo eliminações como  o uso da raiz e quanto a isso me refiro que devem ter inúmeras formas de otimizar o código e assim diminuir o tempo de execução, ainda mais visando o paralelismo, então achei isso bem importante e notável.
 
 No começo, não sabia se o método estava certo, então fiz uma entrada02 com menos números tendo primos e não primos e verificando se na saída eles vinham na ordem original e somente os primos, isso facilitou bastante correções e o decorrer do código, pois era bem difícil a visualização na Entrada01 ( a fornecida), entretanto, feito esses testes na entrada02, só alterei para entrada01 e obtive os resultados esperados, ainda adicionei um - Primo só para deixar mais visível ainda.
 
