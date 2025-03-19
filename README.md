@@ -58,6 +58,11 @@ Gerando esse gráfico de dispersão:
 
 ![Image](https://github.com/user-attachments/assets/31b765b3-74f8-4cc8-905b-cd20ea5a2578)
 
+E esse outro que denota a diferença do modelo paralelo, ficando evidenciado que ele é bem mais eficiente em relação a tempo de execução que o sequencial e que, conforme se aumentam as threads, o tempo diminui, mesmo que em um "passo" menor.
+
+![image](https://github.com/user-attachments/assets/4ca0c858-348b-4a86-b230-7a46e19b401e)
+
+
 Feito isso, foi comprovado que o que a teoria estabelece realmente acontece, tendo uma diferença significativa da sequencial pra paralela e, quando ambas são paralelas, a que tem mais threads acaba sendo executada em um tempo menor.
 
 
