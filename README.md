@@ -48,7 +48,8 @@ Implementação programação paralela  10 threads - 60 ms
 ![image](https://github.com/user-attachments/assets/842d8404-2cc6-4b57-b19c-aaf8625761b9)
 
 Gerando esse gráfico de dispersão:
-![Imagem do WhatsApp de 2025-03-19 à(s) 00 00 23_2bba0203](https://github.com/user-attachments/assets/31b765b3-74f8-4cc8-905b-cd20ea5a2578)
+
+![Image](https://github.com/user-attachments/assets/31b765b3-74f8-4cc8-905b-cd20ea5a2578)
 
 Feito isso, foi comprovado que o que a teoria estabelece realmente acontece, tendo uma diferença significativa da sequencial pra paralela e, quando ambas são paralelas, a que tem mais threads acaba sendo executada em um tempo menor.
 
