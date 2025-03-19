@@ -58,7 +58,7 @@ Gerando esse gráfico de dispersão:
 
 ![Image](https://github.com/user-attachments/assets/31b765b3-74f8-4cc8-905b-cd20ea5a2578)
 
-E esse outro que denota a diferença do modelo paralelo, ficando evidenciado que ele é bem mais eficiente em relação a tempo de execução que o sequencial e que, conforme se aumentam as threads, o tempo diminui, mesmo que em um "passo" menor.
+E esse outro que denota a diferença do modelo paralelo, ficando evidenciado que ele é bem mais eficiente em relação a tempo de execução que o sequencial e que, conforme se aumentam as threads, o tempo diminui, mesmo que em um "passo" menor. ( Tempo em milisegundos)
 
 ![image](https://github.com/user-attachments/assets/4ca0c858-348b-4a86-b230-7a46e19b401e)
 
